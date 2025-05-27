@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+*{
+    font-family: 'Roboto-mono',monospace;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* .cursor{
+    display:block;
+    width: 1.5px;
+    height: 40px;
+    position: fixed;
+    top: 246px;
+    left: 135px;
+    animation: blink 0.9s infinite;
+} */
+
+@keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+.animate-blink {
+  animation: blink 0.9s infinite;
+}
+  
+
+.letter {
+    position: relative;
+  }
+  
+.typing-cursor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* active 
+  hover
+
+
+
+
+*/
+/* Default light theme */
+:root {
+  --bg: #f1f5f9;
+  --text: black;
+  --text-active: #57534e; /* stone-700 */
+  --text-hover: #44403c; /* stone-600 */
+  --correct: #292524; /* stone-700 */
+  --wrong: #dc2626; /* red-600 */
+  --skipped: #A8A29E; /* stone-400 */
+  --langOpt:#57534E; /* stone-700 */
+  --default: #A8A29E; /* stone-400 */
+  --settingBg: #e7e5e4; /* stone-200 */
+  --heading: #292524; /*stone-800*/
+  --timer: #292524; /*stone-800*/
+  --cursor: #57534e; /* stone-700 */
+  --restart: #A8A29E; /* stone-400 */
+  --restart-hover: #44403c; /* stone-600 */
+}
+
+/* Dark theme */
+.dark {
+  --bg: #18181B;
+  --text: white;
+  --text-active: #3b82f6; /* blue-500 */
+  --text-hover: white;
+  --correct: white;
+  --wrong: #ef4444; /* red-500 */
+  --skipped: #a1a1aa; /* zinc-500 */
+  --langOpt: white;
+  --default: #71717A; /* zinc-500 */
+  --settingBg: #3f3f46; /*zinc-700*/
+  --heading: #2563eb; /*blue-600*/
+  --timer: #e0f2fe;
+  --cursor: #3b82f6; /* blue-500 */
+  --restart: #71717A; /* zinc-500 */
+  --restart-hover: #3b82f6; /* blue-500 */
+}
+

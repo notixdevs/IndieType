@@ -17,14 +17,10 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/stvy2346/indietype.git
-cd brainrot-convertor
+git clone https://github.com/notixdevs/IndieType.git
 
 # Install frontend dependencies
 npm install
-
-# Switch folder
-cd typing-app
 
 # Start the development server
 npm run dev
